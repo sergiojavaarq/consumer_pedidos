@@ -1,0 +1,171 @@
+21:57:58.891 [restartedMain] INFO  b.c.c.ConsumerPedidosApplication - Starting ConsumerPedidosApplication using Java 20 with PID 548 (C:\workspace_java_arq\consumer_pedidos\target\classes started by Samsung in C:\workspace_java_arq\consumer_pedidos)
+21:57:58.895 [restartedMain] INFO  b.c.c.ConsumerPedidosApplication - No active profile set, falling back to 1 default profile: "default"
+21:57:59.078 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+21:57:59.078 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+21:58:03.858 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+21:58:03.895 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+21:58:03.896 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+21:58:03.896 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+21:58:04.320 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+21:58:04.322 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5160 ms
+21:58:07.422 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+21:58:08.521 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+21:58:13.343 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+21:58:13.609 [restartedMain] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [pkc-6ojv2.us-west4.gcp.confluent.cloud:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = [hidden]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = PLAIN
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = SASL_SSL
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+21:58:14.007 [restartedMain] INFO  o.a.k.c.s.a.AbstractLogin - Successfully logged in.
+21:58:15.667 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.3.2
+21:58:15.670 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: b66af662e61082cb
+21:58:15.670 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1681779495664
+21:58:15.678 [restartedMain] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): pagamentos
+21:58:15.708 [restartedMain] INFO  b.c.c.ConsumerPedidosApplication - Started ConsumerPedidosApplication in 17.422 seconds (process running for 18.79)
+21:58:18.011 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition pagamentos-0 to 0 since the associated topicId changed from null to uB8x70SERtq3oj9z63z_bA
+21:58:18.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition pagamentos-5 to 0 since the associated topicId changed from null to uB8x70SERtq3oj9z63z_bA
+21:58:18.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition pagamentos-4 to 0 since the associated topicId changed from null to uB8x70SERtq3oj9z63z_bA
+21:58:18.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition pagamentos-1 to 0 since the associated topicId changed from null to uB8x70SERtq3oj9z63z_bA
+21:58:18.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition pagamentos-2 to 0 since the associated topicId changed from null to uB8x70SERtq3oj9z63z_bA
+21:58:18.012 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting the last seen epoch of partition pagamentos-3 to 0 since the associated topicId changed from null to uB8x70SERtq3oj9z63z_bA
+21:58:18.015 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: lkc-m8d8d1
+21:58:18.018 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator b3-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 2147483644 rack: null)
+21:58:18.037 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+21:58:19.427 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: need to re-join with the given member-id: consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558
+21:58:19.428 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+21:58:19.428 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+21:58:19.591 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation Generation{generationId=9, memberId='consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558', protocol='range'}
+21:58:19.592 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 9: {consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558=Assignment(partitions=[pagamentos-0, pagamentos-1, pagamentos-2, pagamentos-3, pagamentos-4, pagamentos-5])}
+21:58:19.764 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully synced group in generation Generation{generationId=9, memberId='consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558', protocol='range'}
+21:58:19.765 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[pagamentos-0, pagamentos-1, pagamentos-2, pagamentos-3, pagamentos-4, pagamentos-5])
+21:58:19.773 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: pagamentos-0, pagamentos-1, pagamentos-2, pagamentos-3, pagamentos-4, pagamentos-5
+21:58:20.105 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-5 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 11 rack: 2)], epoch=0}}
+21:58:20.106 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 9 rack: 0)], epoch=0}}
+21:58:20.106 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-3 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b1-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 1 rack: 1)], epoch=0}}
+21:58:20.106 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-2 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b8-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 8 rack: 2)], epoch=0}}
+21:58:20.106 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-1 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b6-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 6 rack: 0)], epoch=0}}
+21:58:20.106 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b10-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 10 rack: 1)], epoch=0}}
+21:58:20.221 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: partitions assigned: [pagamentos-0, pagamentos-1, pagamentos-2, pagamentos-3, pagamentos-4, pagamentos-5]
+21:58:22.395 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  b.c.c.consumers.PagamentosConsumer - CheckoutResponseDto(transactionId=7503fa3b-af60-470c-9e25-5eda06f43ac1, status=success, message=Pagamento realizado com sucesso., order=OrderResponseDto(id=96657758-9eff-4594-a584-7cc3b2e62b77, date=4/18/2023 12:58:23 AM, customerName=João Silva, customerEmail=joao.silva@gmail.com, customerCpf=123.456.789-00), total=100.50)
+21:58:22.784 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  b.c.c.consumers.PagamentosConsumer - CheckoutResponseDto(transactionId=f9d50e72-e479-4501-80d1-e7980d7caf9a, status=success, message=Pagamento realizado com sucesso., order=OrderResponseDto(id=3bad3f3a-d1cf-4be3-b9a0-caf9b0e00055, date=4/18/2023 12:58:23 AM, customerName=João Silva, customerEmail=joao.silva@gmail.com, customerCpf=123.456.789-00), total=100.50)
+21:58:43.928 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: group is already rebalancing
+21:58:43.929 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions pagamentos-0, pagamentos-1, pagamentos-2, pagamentos-3, pagamentos-4, pagamentos-5
+21:58:43.930 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: partitions revoked: [pagamentos-0, pagamentos-1, pagamentos-2, pagamentos-3, pagamentos-4, pagamentos-5]
+21:58:43.930 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+21:58:44.093 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully joined group with generation Generation{generationId=10, memberId='consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558', protocol='range'}
+21:58:44.093 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Finished assignment for group at generation 10: {consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558=Assignment(partitions=[pagamentos-3, pagamentos-4, pagamentos-5]), consumer-group_id-1-1badb539-689e-4018-81be-208e8c39815f=Assignment(partitions=[pagamentos-0, pagamentos-1, pagamentos-2])}
+21:58:44.259 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Successfully synced group in generation Generation{generationId=10, memberId='consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558', protocol='range'}
+21:58:44.259 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Notifying assignor about the new Assignment(partitions=[pagamentos-3, pagamentos-4, pagamentos-5])
+21:58:44.259 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Adding newly assigned partitions: pagamentos-3, pagamentos-4, pagamentos-5
+21:58:44.581 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-5 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b11-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 11 rack: 2)], epoch=0}}
+21:58:44.581 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-4 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b9-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 9 rack: 0)], epoch=0}}
+21:58:44.582 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Setting offset for partition pagamentos-3 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[b1-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 1 rack: 1)], epoch=0}}
+21:58:44.690 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: partitions assigned: [pagamentos-3, pagamentos-4, pagamentos-5]
+21:59:02.786 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21:59:02.792 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Revoke previously assigned partitions pagamentos-3, pagamentos-4, pagamentos-5
+21:59:02.792 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: partitions revoked: [pagamentos-3, pagamentos-4, pagamentos-5]
+21:59:02.792 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Member consumer-group_id-1-a4751c53-284f-432d-a54f-4438655eb558 sending LeaveGroup request to coordinator b3-pkc-6ojv2.us-west4.gcp.confluent.cloud:9092 (id: 2147483644 rack: null) due to the consumer unsubscribed from all topics
+21:59:02.793 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation and member id due to: consumer pro-actively leaving the group
+21:59:02.793 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+21:59:02.793 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+21:59:02.793 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation and member id due to: consumer pro-actively leaving the group
+21:59:02.793 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+21:59:02.845 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21:59:02.958 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+21:59:02.958 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+21:59:02.958 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+21:59:02.973 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-group_id-1 unregistered
+21:59:02.974 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - group_id: Consumer stopped
+21:59:02.992 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+21:59:02.996 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8085"]
+21:59:02.996 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+21:59:03.007 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8085"]
+21:59:03.010 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8085"]
